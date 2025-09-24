@@ -32,3 +32,10 @@ import = [
 
 [window]
 opacity = 0.9
+
+
+[keyboard]
+bindings = [
+  { key = "N", mods = "Control", action = "CreateNewWindow" },
+]
+
