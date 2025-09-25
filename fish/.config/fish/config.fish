@@ -4,3 +4,5 @@ end
 fastfetch
 set -g fish_greeting
 starship init fish | source
+# added path for go
+fish_add_path /usr/local/go/bin
