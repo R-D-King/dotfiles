@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# make sure to check the lateset font version on the github page 
+# and add any fonts that is not shown below if you like 
+# https://github.com/ryanoasis/nerd-fonts
+# https://www.nerdfonts.com/
+
+
 # uncomment the fonts you want
 declare -a fonts=(
     # Agave
@@ -8,8 +14,10 @@ declare -a fonts=(
     # AurulentSansMono
     # BigBlueTerminal
     # BitstreamVeraSansMono
-    # CascaidaCode
+    # CascaidaCode  # comes by default with windows terminal
+	# CascadiaMono  # for NO ligatures vesrion
     # CodeNewRoman
+	# CommitMono  # also a nice and small font
     # Cousine
     # DaddyTimeMono
     # DejaVuSansMono
@@ -29,13 +37,13 @@ declare -a fonts=(
     # InconsolataGo
     # InconsolataLGC
     # Iosevka
-    # JetBrainsMono
+    # JetBrainsMono  # very good font but size around 120 MB
     # Lekton
     # LiberationMono
     # Lilex
-    # Meslo
+    # Meslo  # great font but big size around 100 MB or a little more
     # Monofur
-    # Mononoki
+    # Mononoki  # nice and small font around 14 MB
     # Monoid
     # MPlus
     # NerdFontsSymbolsOnly
@@ -50,7 +58,7 @@ declare -a fonts=(
     # Tinos
     # Ubuntu
     # UbuntuMono
-    # VictorMono
+    # VictorMono  # consider taking a look
 )
 
 # enter the version you want
