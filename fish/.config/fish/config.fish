@@ -6,3 +6,5 @@ set -g fish_greeting
 starship init fish | source
 # added path for go
 fish_add_path /usr/local/go/bin
+# added zoxide support
+zoxide init fish | source
