@@ -8,3 +8,5 @@ starship init fish | source
 fish_add_path /usr/local/go/bin
 # added zoxide support
 zoxide init fish | source
+# added path to neovim
+fish_add_path /opt/nvim-linux-x86_64/bin
