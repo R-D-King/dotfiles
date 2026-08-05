@@ -52,13 +52,16 @@ function project_picker --description "Switch to a project directory in Zellij"
 
     set -l project_path "$projects_dir/$selected"
 
-    # Update zoxide database
-    zoxide add "$project_path"
-
     # Check if we're inside Zellij
     if not set -q ZELLIJ
-        cd "$project_path"
-        commandline -f repaint
+        # If output is going to a terminal, we are running it directly.
+        if test -t 1
+            cd "$project_path"
+            commandline -f repaint
+        # If output is NOT a terminal, we are being captured by a variable.
+        else
+            echo "$project_path"
+        end
         return 0
     end
 

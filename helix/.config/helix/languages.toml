@@ -53,6 +53,13 @@ auto-format = true
 name = "toml"
 auto-format = true
 
+# JSON
+[[language]]
+name = "json"
+auto-format = true
+formatter = { command = "jq", args = ["."] }
+
+
 # BASH / SHELL (Scripts)
 [[language]]
 name = "bash"
